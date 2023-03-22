@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;1,300&family=Open+Sans:ital,wght@1,300;1,700&family=Poppins:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="caixa-superior">
+
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho"> GSAC-SARL </h2>
+            <a href="#titulo-inferior" class="link-cabecalho"> Quem somos </a>
+            <a href="#titulo-meio" class="link-cabecalho">serviços </a>
+            <a class="link-cabecalho" onclick="chamaOabacaxi()">Contato</a>
+        </div>
+        <h1> GSAC-SARL</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/dedebah1@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entra em Contato </h3>
+            <label>
+                Nome
+                <input type="text" name="nome" placeholder="Digite o seu nome" required />
+            </label>
+
+            <label>
+                Email
+                <input type="tex" name="Email" placeholder="Digite o seu Email" required />
+            </label>
+            <label>
+                watsapp
+                <input type="tel" name="telefone" placeholder="Digite o seu telefone" required />
+            </label>
+            <label>
+                Endereco
+                <input type="end" name="Endereco" placeholder="Digite o seu endereco" required />
+            </label>
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual é a sua Duvida"></textarea>
+            </label>
+
+            <button type="submit"> Enviar</button>
+
+        </form>
+    </div>
+    <h2 id="titulo-meio"> Nossos Serviços</h2>
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card"> Contabilidade Completo</h3>
+            <ul>
+                <li>Primeiro Item Da Lista</li>
+                <li>Segundo Item Da Lista</li>
+                <li>Terceira Item Da Lista</li>
+                <li>Quarta Item Da Lista</li>
+                <li>Quinta Item Da Lista</li>
+                <li>Sexta Item Da Lista</li>
+            </ul>
+        </div>
+        <div class="card">
+
+            <h3 class="titulo-card"> Cuidar Do Seu Negocio</h3>
+            <ul>
+                <li>Primeiro Item Da Lista</li>
+                <li>Segundo Item Da Lista</li>
+                <li>Terceira Item Da Lista</li>
+                <li>Quarta Item Da Lista</li>
+                <li>Quinta Item Da Lista</li>
+                <li>Sexta Item Da Lista</li>
+            </ul>
+        </div>
+        <div class="card">
+
+            <h3 class="titulo-card"> Cuidamos De voçe</h3>
+            <ul>
+                <li>Primeiro Item Da Lista</li>
+                <li>Segundo Item Da Lista</li>
+                <li>Terceira Item Da Lista</li>
+                <li>Quarta Item Da Lista</li>
+                <li>Quinta Item Da Lista</li>
+                <li>Sexta Item Da Lista</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="caixa-inferior">
+
+            <h2 id="titulo-inferior">Sobre Nós</h2>
+            <p class="paragrafos-inferio"> Estamos presente no mercado há mais de 10 anos auxiliando nossos clientes
+                nacionais e internacionais que ja atuam ou desejam abrir seus negócios e ingressar na Guiné_Bissau.
+                Assessoramos investidores que queiram prospectar seus negócios na Guiné_Bissau e investidores
+                (“Guineense”) interessados em fazer negócios em outros países. Oferecemos “backoffice” nas áreas
+                Financeira, Recursos Humanos, Tributária e Contabilidade, inclusive a abertura, legalização e
+                regularização de empresas e negócios. Com pesquisas de mercado, montamos toda estrutura organizacional,
+                ambiente operacional e logística de suas atividades, com profissionais qualificados, competentes e
+                continuamente treinados. Somos especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em
+                IFRS. Assim, o Planejamento das Operações e suas consequências tributárias passam a ser condições de
+                competitividade, inclusive sugerindo incorporação ou desmembramento de atividades. Planos que atendem o
+                seu perfil e do seu negócio Assessores especialistas no seu segmento Atendimento personalizado, em
+                diversos canais, até às 15 Dias Sua empresa regularizada pagando o mínimo de impostos</p>
+        </div>
+    </div>
+</body>
+<script>
+    
+    let formulario = document.getElementById("formulario-contato")
+    
+    
+    function chamaOabacaxi(){
+        formulario.className= "mostrar-formulario"
+        
+    }
+     
+</script>
+
+</html>
